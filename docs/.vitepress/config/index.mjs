@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/enlighten/',
+  // base: '/enlighten/',
   title: 'enlighten',
   description: 'A VitePress Site',
   themeConfig: {
