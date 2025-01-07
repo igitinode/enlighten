@@ -1,29 +1,11 @@
 import { defineConfig } from 'vitepress'
+import { common as connomConfig } from './common.mjs'
+import { theme as themeConfig } from './theme.mjs'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/enlighten/',
-  title: 'enlighten',
-  description: 'A VitePress Site',
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-    ],
+  // 站点级选项
+  ...connomConfig,
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
-      },
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
-    ],
-  },
+  // 主题选项
+  ...themeConfig,
 })
