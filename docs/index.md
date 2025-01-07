@@ -11,6 +11,9 @@ hero: # banner 部分
   name: 学习永远在路上 # 主标题
   text: 积跬步、积小流 # 副标题
   tagline: 纸上得来终觉浅，绝知此事要躬行 # 内容区
+  image: # 图片区
+    src: /logo.png # 图片加载位置
+    alt: 加载失败 # 图片加载失败提示语
   actions: # 按钮区域
     - theme: brand #  按钮的颜色主题，brand(默认) | alt
       text: Markdown 案例 # 按钮文案
