@@ -6,6 +6,7 @@ const pkg = require('../../../package.json')
 
 import { sidebarGuide } from './sidebarGuide.mjs'
 import { sidebarReference } from './sidebarReference.mjs'
+import { sidebarWebsite } from './sidebarWebsite.mjs'
 
 export const theme = defineConfig({
   themeConfig: {
@@ -35,6 +36,7 @@ export const theme = defineConfig({
     sidebar: {
       '/guide/': { base: '/guide/', items: sidebarGuide() },
       '/reference/': { base: '/reference/', items: sidebarReference() },
+      '/website/': { base: '/website/', items: sidebarWebsite() },
     },
 
     // 本地搜索
@@ -88,6 +90,7 @@ function nav() {
   return [
     { text: '指南', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
     { text: '参考', link: '/reference/site-config', activeMatch: '/reference/' },
+    { text: '网站收藏', link: '/website/official-website', activeMatch: '/website/' },
     {
       text: pkg.version, // 首页导航有下拉菜单
       items: [
