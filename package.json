@@ -9,5 +9,9 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "@vueuse/core": "^12.3.0",
+    "vue-use-spring": "^0.3.3"
   }
 }

@@ -4,11 +4,14 @@ import DefaultTheme from 'vitepress/theme'
 // import './pinia-styles/index.css'
 import './vitepress-styles/index.css'
 
+import PiniaLogo from './components/PiniaLogo.vue'
+
 /** @type {import('vitepress').Theme} */
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
+      'home-hero-image': () => h('div', { class: 'image-src' }, h(PiniaLogo))
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
