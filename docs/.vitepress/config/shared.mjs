@@ -9,10 +9,10 @@ export const sharedConfig = defineConfig({
   base: '/enlighten/',
   // 浏览器标签 title
   title: 'Enlighten',
-  // TODO:重写路劲？
-  rewrites: {
-    'zh/:rest*': ':rest*',
-  },
+  // TODO:重写国际化路劲？
+  // rewrites: {
+  //   'zh/:rest*': ':rest*',
+  // },
   // 将 favicon.ico 放在公共目录中，如果设置了 base，则使用 /base/favicon.ico
   /* prettier-ignore */
   head: [
@@ -49,16 +49,17 @@ export const sharedConfig = defineConfig({
     ],
     // 本地搜索
     search: {
-      provider: 'algolia',
-      options: {
-        appId: '8J64VVRP8K',
-        apiKey: '52f578a92b88ad6abde815aae2b0ad7c',
-        indexName: 'vitepress',
-        locales: {
-          ...zhSearch,
-          ...enSearch,
-        },
-      },
+      provider: 'local',
+      // provider: 'algolia',
+      // options: {
+      //   appId: '8J64VVRP8K',
+      //   apiKey: '52f578a92b88ad6abde815aae2b0ad7c',
+      //   indexName: 'vitepress',
+      //   locales: {
+      //     ...zhSearch,
+      //     // ...enSearch,
+      //   },
+      // },
     },
     // 内置了对 Carbon Ads 的原生支持
     // carbonAds: { code: "", placement: "" },

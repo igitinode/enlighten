@@ -8,9 +8,9 @@ export default defineConfig({
   // 站点级选项
   ...sharedConfig,
 
-  // 国际化
+  // 国际化问题存在切换异常
   locales: {
     root: { label: '简体中文', ...zh },
-    en: { label: 'English', en },
+    // zh: { label: 'English', zh },
   },
 })
