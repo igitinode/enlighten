@@ -8,55 +8,24 @@ import { sidebarGuide } from './sidebarGuide.mjs'
 import { sidebarReference } from './sidebarReference.mjs'
 import { sidebarWebsite } from './sidebarWebsite.mjs'
 
-export const theme = defineConfig({
+export const zh = defineConfig({
+  // 网站的语言
+  lang: 'zh-Hans',
+  // 浏览器检索关键字
+  description: '学习永无止尽, Vite & Vue 搭建静态网站',
   themeConfig: {
-    // 导航栏上显示的 Logo，位于站点标题前。
-    logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },
-
-    // 在导航栏中展示带有图标的社交帐户链接。
-    /* prettier-ignore */
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/igitinode' },
-      // { icon: 'twitter', link: '...' }
-    ],
-
-    // 文章右侧目录显示方式，deep为完整显示
-    // 将此值设置为 outline:false 可禁止渲染大纲容器。
-    outline: {
-      level: 'deep',
-      // 显示在 outline 上的标题。
-      label: '页面导航'
-
-    },
-
     // 导航菜单项的配置
     nav: nav(),
-
     // 侧边栏是文档的主要导航块
     sidebar: {
       '/guide/': { base: '/guide/', items: sidebarGuide() },
       '/reference/': { base: '/reference/', items: sidebarReference() },
       '/website/': { base: '/website/', items: sidebarWebsite() },
     },
-
-    // 本地搜索
-    search: {
-      provider: 'local',
-    },
-
-    // 自定义 lastUpdated
-    lastUpdated: {
-      text: '最后更新于',
-      formatOptions: {
-        dateStyle: 'short',
-        timeStyle: 'medium'
-      }
-    },
-
     // 编辑链接让你可以显示一个链接，以在 GitHub 或 GitLab 等 Git 管理服务上编辑页面。要启用它
     editLink: {
       pattern: 'https://github.com/igitinode/istudy/edit/main/docs/:path',
-      text: '在 GitHub 上编辑此页面'
+      text: '在 GitHub 上编辑此页面',
     },
 
     // 页脚配置。可以添加 message 和 copyright。由于设计原因，仅当页面不包含侧边栏时才会显示页脚。
@@ -64,11 +33,25 @@ export const theme = defineConfig({
       message: '基于 MIT 许可发布',
       copyright: `版权所有 © 2024-${new Date().getFullYear()} 听雨君`,
     },
-
+    // 文章右侧目录显示方式，deep为完整显示
+    // 将此值设置为 outline:false 可禁止渲染大纲容器。
+    outline: {
+      level: 'deep',
+      // 显示在 outline 上的标题。
+      label: '页面导航',
+    },
     // 自定义出现在上一页和下一页链接上方的文本。也可用于全局/局部禁用上一页/下一页链接。
     docFooter: {
       prev: '上一页',
-      next: '下一页'
+      next: '下一页',
+    },
+    // 自定义 lastUpdated
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium',
+      },
     },
 
     langMenuLabel: '多语言',
@@ -77,10 +60,7 @@ export const theme = defineConfig({
     darkModeSwitchLabel: '主题',
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
-    skipToContentLabel: '跳转到内容'
-
-    // 内置了对 Carbon Ads 的原生支持
-    // carbonAds: { code: "", placement: "" },
+    skipToContentLabel: '跳转到内容',
   },
 })
 
@@ -105,4 +85,48 @@ function nav() {
       ],
     },
   ]
+}
+
+export const search = {
+  zh: {
+    placeholder: '搜索文档',
+    translations: {
+      button: {
+        buttonText: '搜索文档',
+        buttonAriaLabel: '搜索文档',
+      },
+      modal: {
+        searchBox: {
+          resetButtonTitle: '清除查询条件',
+          resetButtonAriaLabel: '清除查询条件',
+          cancelButtonText: '取消',
+          cancelButtonAriaLabel: '取消',
+        },
+        startScreen: {
+          recentSearchesTitle: '搜索历史',
+          noRecentSearchesText: '没有搜索历史',
+          saveRecentSearchButtonTitle: '保存至搜索历史',
+          removeRecentSearchButtonTitle: '从搜索历史中移除',
+          favoriteSearchesTitle: '收藏',
+          removeFavoriteSearchButtonTitle: '从收藏中移除',
+        },
+        errorScreen: {
+          titleText: '无法获取结果',
+          helpText: '你可能需要检查你的网络连接',
+        },
+        footer: {
+          selectText: '选择',
+          navigateText: '切换',
+          closeText: '关闭',
+          searchByText: '搜索提供者',
+        },
+        noResultsScreen: {
+          noResultsText: '无法找到相关结果',
+          suggestedQueryText: '你可以尝试查询',
+          reportMissingResultsText: '你认为该查询应该有结果？',
+          reportMissingResultsLinkText: '点击反馈',
+        },
+      },
+    },
+  },
 }

@@ -1,11 +1,16 @@
 import { defineConfig } from 'vitepress'
-import { common as connomConfig } from './common.mjs'
-import { theme as themeConfig } from './defaultTheme.mjs'
+import { sharedConfig } from './shared.mjs'
+
+import { zh } from './zh.mjs'
+import { en } from './en.mjs'
 
 export default defineConfig({
   // 站点级选项
-  ...connomConfig,
+  ...sharedConfig,
 
-  // 主题选项
-  ...themeConfig,
+  // 国际化
+  locales: {
+    root: { label: '简体中文', ...zh },
+    en: { label: 'English', en },
+  },
 })
