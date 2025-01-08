@@ -16,8 +16,8 @@ hero: # banner 部分
     alt: 加载失败 # 图片加载失败提示语
   actions: # 按钮区域
     - theme: brand #  按钮的颜色主题，brand(默认) | alt
-      text: Markdown 案例 # 按钮文案
-      link: /markdown-examples # 跳转连接，以 docs 为根路径
+      text: 建构初衷 # 按钮文案
+      link: /choose-vitepress # 跳转连接，以 docs 为根路径
     - theme: alt
       text: API 接口 # 按钮文案
       link: /api-examples # 跳转连接，以 docs 为根路径
