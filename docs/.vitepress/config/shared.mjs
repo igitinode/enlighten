@@ -16,8 +16,8 @@ export const sharedConfig = defineConfig({
   // 将 favicon.ico 放在公共目录中，如果设置了 base，则使用 /base/favicon.ico
   /* prettier-ignore */
   head: [
-    [ 'link', { rel: 'icon', type: 'image/svg+xml', href: '/enlighten/vitepress-logo-mini.svg' }],
-    [ 'link', { rel: 'icon', type: 'image/png', href: '/enlighten/vitepress-logo-mini.png' }],
+    [ 'link', { rel: 'icon', type: 'image/svg+xml', href: '/enlighten/compass.svg' }],
+    [ 'link', { rel: 'icon', type: 'image/png', href: '/enlighten/compass.png' }],
     // 添加元数据
     ['meta', { name: 'theme-color', content: '#5f67ee' }],
     ['meta', { property: 'og:type', content: 'website' }],
@@ -40,7 +40,7 @@ export const sharedConfig = defineConfig({
 
   themeConfig: {
     // 导航栏上显示的 Logo，位于站点标题前。
-    logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },
+    logo: { src: '/compass.svg', width: 24, height: 24 },
     // 在导航栏中展示带有图标的社交帐户链接。
     /* prettier-ignore */
     socialLinks: [

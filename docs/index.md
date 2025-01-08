@@ -4,7 +4,7 @@
 layout: home
 
 # 网页浏览器 titile 部分
-title: enlighten
+title: Enlighten
 titleTemplate: 学习永远在路上
 
 hero: # banner 部分
