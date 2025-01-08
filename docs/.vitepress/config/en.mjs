@@ -4,9 +4,9 @@ import { createRequire } from 'module'
 const require = createRequire(import.meta.url)
 const pkg = require('../../../package.json')
 
-import { sidebarGuide } from './sidebarGuide.mjs'
-import { sidebarReference } from './sidebarReference.mjs'
-import { sidebarWebsite } from './sidebarWebsite.mjs'
+import { sidebarGuide } from './sidebar/sidebarGuide.mjs'
+import { sidebarReference } from './sidebar/sidebarReference.mjs'
+import { sidebarWebsite } from './sidebar/sidebarWebsite.mjs'
 
 export const en = defineConfig({
   // 网站的语言
