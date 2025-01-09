@@ -40,7 +40,7 @@ export const zh = defineConfig({
     outline: {
       level: 'deep',
       // 显示在 outline 上的标题。
-      label: '页面导航',
+      label: '内容导航',
     },
     // 自定义出现在上一页和下一页链接上方的文本。也可用于全局/局部禁用上一页/下一页链接。
     docFooter: {
