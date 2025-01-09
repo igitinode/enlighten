@@ -129,7 +129,7 @@ lang: en-US
 
 此数据将可用于页面的其余部分，以及所有自定义和主题组件。
 
-更多信息，参见 [frontmatter](../reference/frontmatter-config)。
+更多信息，参见 [frontmatter](https://vitepress.dev/zh/reference/frontmatter-config)。
 
 ## GitHub 风格的表格 {#github-style-tables}
 
