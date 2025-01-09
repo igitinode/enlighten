@@ -1,4 +1,4 @@
-# Windows 安装基础开发环境{#win-env}
+# Windows 安装基础 Node 开发环境{#win-env}
 
 ## 安装 VScode 编辑器{#win-vscode}
 
