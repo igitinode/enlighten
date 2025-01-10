@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
-
-import { search as zhSearch } from './zh.mjs'
+import algolia from './algolia.mjs'
 
 // 站点级选项配置
 export const sharedConfig = defineConfig({
@@ -54,14 +53,7 @@ export const sharedConfig = defineConfig({
     // 本地搜索
     search: {
       provider: 'algolia',
-      options: {
-        appId: 'EH1CQR29YE',
-        apiKey: 'ca8ad0c2f9df58e28d28d8bf339203da',
-        indexName: 'enlighten',
-        locales: {
-          ...zhSearch,
-        },
-      },
+      options: algolia,
     },
     // 内置了对 Carbon Ads 的原生支持
     // carbonAds: { code: "", placement: "" },
