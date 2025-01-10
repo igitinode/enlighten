@@ -17,9 +17,7 @@ export const sharedConfig = defineConfig({
   // 浏览器标签 title
   title: 'Enlighten',
   // TODO:重写国际化路劲？
-  // rewrites: {
-  //   'zh/:rest*': ':rest*',
-  // },
+
   // 将 favicon.ico 放在公共目录中，如果设置了 base，则使用 /base/favicon.ico
   /* prettier-ignore */
   head: [
@@ -28,7 +26,6 @@ export const sharedConfig = defineConfig({
     ['meta', { name: 'theme-color', content: '#5f67ee' }],
     // algolia 相关配置
     ['meta', { property: 'og:type', content: 'website' }],
-    // ['meta', { property: 'og:locale', content: 'zh' }],
     ['meta', { property: 'og:title', content: 'Enlighten | 学无止境' }],
     ['meta', { property: 'og:site_name', content: 'Enlighten' }],
     ['meta', { property: 'og:image', content: 'https://igitinode.github.io/enlighten/compass.png' }],
