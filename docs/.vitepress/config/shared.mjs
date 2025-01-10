@@ -22,7 +22,7 @@ export const sharedConfig = defineConfig({
     ['meta', { name: 'theme-color', content: '#5f67ee' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'en' }],
-    ['meta', { property: 'algolia-site-verification', content: '69154A9330627045' }],
+    ['meta', { name: 'algolia-site-verification', content: '69154A9330627045' }],
   ],
   // 是否使用 Git 获取每个页面的最后更新时间戳。时间戳将包含在每个页面的页面数据中，可通过 useData 访问
   lastUpdated: true,
