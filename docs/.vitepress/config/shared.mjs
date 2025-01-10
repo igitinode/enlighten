@@ -18,11 +18,15 @@ export const sharedConfig = defineConfig({
   head: [
     [ 'link', { rel: 'icon', type: 'image/svg+xml', href: '/enlighten/compass.svg' }],
     [ 'link', { rel: 'icon', type: 'image/png', href: '/enlighten/compass.png' }],
-    // 添加元数据
     ['meta', { name: 'theme-color', content: '#5f67ee' }],
+    // algolia 相关配置
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'zh' }],
-    ['meta', { name: 'algolia-site-verification', content: '69154A9330627045' }],
+    ['meta', { property: 'og:title', content: 'Enlighten | 学无止境' }],
+    ['meta', { property: 'og:site_name', content: 'Enlighten' }],
+    ['meta', { property: 'og:image', content: 'https://igitinode.github.io/enlighten/compass.png' }],
+    ['meta', { property: 'og:url', content: 'https://igitinode.github.io/enlighten/' }],
+    ['meta', { name: 'algolia-site-verification', content: '91EDD62385394910' }],
   ],
   // 是否使用 Git 获取每个页面的最后更新时间戳。时间戳将包含在每个页面的页面数据中，可通过 useData 访问
   lastUpdated: true,
