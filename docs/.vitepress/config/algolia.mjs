@@ -1,7 +1,7 @@
 export default {
   appId: 'EH1CQR29YE',
   apiKey: 'ca8ad0c2f9df58e28d28d8bf339203da',
-  indexName: 'Enlighten',
+  indexName: 'igitinode_github_io_eh1cqr29ye_pages',
   placeholder: '搜索文档',
   translations: {
     button: {
