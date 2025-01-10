@@ -11,7 +11,7 @@ import { sidebarFrontEnd } from './sidebar/sidebarFrontEnd.mjs'
 
 export const zh = defineConfig({
   // 网站的语言
-  lang: 'zh-Hans',
+  lang: 'zh-CN',
   // 浏览器检索关键字
   description: '学习永无止尽, Vite & Vue 搭建静态网站',
   themeConfig: {
