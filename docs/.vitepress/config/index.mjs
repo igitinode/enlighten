@@ -1,8 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { sharedConfig } from './shared.mjs'
-
 import { zh as zhConfig } from './zh.mjs'
-
 export default defineConfig({
   // 站点级选项
   ...sharedConfig,

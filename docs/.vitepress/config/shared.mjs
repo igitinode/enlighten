@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 
 import { search as zhSearch } from './zh.mjs'
-import { search as enSearch } from './en.mjs'
 
 // 站点级选项配置
 export const sharedConfig = defineConfig({
@@ -62,7 +61,6 @@ export const sharedConfig = defineConfig({
       //   indexName: 'vitepress',
       //   locales: {
       //     ...zhSearch,
-      //     // ...enSearch,
       //   },
       // },
     },
