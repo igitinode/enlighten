@@ -166,6 +166,16 @@ git branch -m <old_branch_name> <new_branch_name>
 git diff <branch_1> <branch_2>
 ```
 
+### 强制 main 回退到某次提交
+
+慎重，造成的破坏性很强哦！
+
+```sh [bash]
+git checkout main
+git reset --hard 分支哈希码
+git push origin main --force
+```
+
 ### 分支管理流程 {#git-branch-mang}
 
 #### 开发新功能
