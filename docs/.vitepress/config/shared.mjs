@@ -53,16 +53,15 @@ export const sharedConfig = defineConfig({
     ],
     // 本地搜索
     search: {
-      provider: 'local',
-      // provider: 'algolia',
-      // options: {
-      //   appId: '8J64VVRP8K',
-      //   apiKey: '52f578a92b88ad6abde815aae2b0ad7c',
-      //   indexName: 'vitepress',
-      //   locales: {
-      //     ...zhSearch,
-      //   },
-      // },
+      provider: 'algolia',
+      options: {
+        appId: 'EH1CQR29YE',
+        apiKey: 'ca8ad0c2f9df58e28d28d8bf339203da',
+        indexName: 'enlighten',
+        locales: {
+          ...zhSearch,
+        },
+      },
     },
     // 内置了对 Carbon Ads 的原生支持
     // carbonAds: { code: "", placement: "" },
