@@ -1,7 +1,7 @@
 export default {
-  appId: 'EH1CQR29YE',
-  apiKey: 'ca8ad0c2f9df58e28d28d8bf339203da',
-  indexName: 'Enlighten',
+  // appId: 'EH1CQR29YE',
+  // apiKey: 'ca8ad0c2f9df58e28d28d8bf339203da',
+  // indexName: 'Enlighten',
   placeholder: '搜索文档',
   translations: {
     button: {
