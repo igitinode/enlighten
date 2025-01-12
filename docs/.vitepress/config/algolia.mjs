@@ -1,3 +1,5 @@
+// 此处配置参数来源：https://docsearch.algolia.com/docs/api
+
 export default {
   appId: 'P1W3OB2S31',
   apiKey: 'bbab05c14731f3ac35e4851f833f45dd',
@@ -44,5 +46,6 @@ export default {
         }
       }
     }
-  }
+  },
+  maxResultsPerGroup: 7
 }
