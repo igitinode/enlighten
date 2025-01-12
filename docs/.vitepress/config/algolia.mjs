@@ -1,6 +1,6 @@
 export default {
-  appId: 'EH1CQR29YE',
-  apiKey: 'ca8ad0c2f9df58e28d28d8bf339203da',
+  appId: 'P1W3OB2S31',
+  apiKey: 'bbab05c14731f3ac35e4851f833f45dd',
   indexName: 'enlighten',
   locales: {
     root: {
