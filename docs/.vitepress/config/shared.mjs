@@ -30,7 +30,7 @@ export const sharedConfig = defineConfig({
     ['meta', { property: 'og:site_name', content: 'Enlighten' }],
     ['meta', { property: 'og:image', content: 'https://igitinode.github.io/enlighten/compass.png' }],
     ['meta', { property: 'og:url', content: 'https://igitinode.github.io/enlighten/' }],
-    ['meta', { property: 'algolia-site-verification', content: '7798BD8759B1E3AB' }],
+    ['meta', { name: 'algolia-site-verification', content: '7798BD8759B1E3AB' }],
   ],
   // 是否使用 Git 获取每个页面的最后更新时间戳。时间戳将包含在每个页面的页面数据中，可通过 useData 访问
   lastUpdated: true,
