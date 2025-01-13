@@ -6,8 +6,6 @@
 
 安装 `vitepress` 到当前目录的 `pakcage.josn` 的依赖之中。
 
-修一下
-
 ```sh [npm]
 npm install vitepress
 # 等价于
