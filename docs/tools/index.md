@@ -13,3 +13,7 @@
 ## git
 
 **[git 常用命令 ](./tools-git.md)**
+
+## npm
+
+**[npm 常用命令 ](./tools-npm.md)**
