@@ -48,8 +48,8 @@ export const sharedConfig = defineConfig({
   sitemap: {
     hostname: 'https://igitinode.github.io/enlighten',
     transformItems(items) {
-      return items.filter((item) => !item.url.includes('migration'))
-    }
+      return items.filter(item => !item.url.includes('migration'))
+    },
   },
 
   themeConfig: {
@@ -107,6 +107,8 @@ export const sharedConfig = defineConfig({
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
     skipToContentLabel: '跳转到内容',
+    // 是否在 markdown 中的外部链接旁显示外部链接图标。
+    externalLinkIcon: true,
     // 在导航栏中展示带有图标的社交帐户链接。
     /* prettier-ignore */
     socialLinks: [
