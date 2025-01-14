@@ -52,3 +52,5 @@ features:
     title: Vitepress
     details: Vite 和 Vue 驱动的静态站点生成器。将Markdown变成优雅的文档。
 ---
+
+<Video />

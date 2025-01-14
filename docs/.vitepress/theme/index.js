@@ -5,13 +5,14 @@ import DefaultTheme from 'vitepress/theme'
 import './vitepress-styles/index.css'
 
 import PiniaLogo from './components/PiniaLogo.vue'
+import Video from './components/Video.vue'
 
 /** @type {import('vitepress').Theme} */
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'home-hero-image': () => h('div', { class: 'image-src' }, h(PiniaLogo))
+      'home-hero-image': () => h('div', { class: 'image-src' }, h(PiniaLogo)),
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
@@ -19,5 +20,6 @@ export default {
     // app 是 Vue 的全局实例对象，可以注册组件、指令等
     // app.use() 注册第三方组件
     // ...
+    app.component('Video', Video)
   },
 }
