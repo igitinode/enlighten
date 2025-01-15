@@ -1,24 +1,35 @@
 <template>
   <div class="video">
-    <audio ref="audioTag" :src="currentSong.url"></audio>
-    <button @click="play">播放</button>
-    <button @click="pause">暂停</button>
-    <button @click="nextSong">下一首</button>
+    <figure>
+      <audio
+        ref="audioTag"
+        :src="currentSong.url"
+        controls
+        preload="metadata"
+        autoplay
+      >
+        浏览器暂不支持音频播放
+      </audio>
+      <button @click="play">播放</button>
+      <button @click="pause">暂停</button>
+      <button @click="nextSong">下一首</button>
+    </figure>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, watch, onMounted } from 'vue'
 
+const href = window.location.href
 const audioTag = ref(null)
 const songs = [
   {
     name: 'Song1',
-    url: 'https://ting8.yymp3.com/new3/mariahcarey8/23.mp3',
+    url: href + '/music/WhenYouBelieve.mp3',
   },
   {
     name: 'Song2',
-    url: 'https://ting8.yymp3.com/new27/liyugang6/6.mp3',
+    url: href + '/music/westlife.mp3',
   },
 ]
 
@@ -53,10 +64,14 @@ onMounted(() => {
 
 <style scoped>
 .video {
+  audio {
+    margin: 40px auto 20px;
+  }
   text-align: center;
+  margin: 0 auto;
 
   button {
-    margin: 20px;
+    margin: 0 20px 20px;
   }
 }
 </style>
