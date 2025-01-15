@@ -143,6 +143,7 @@ function nav() {
       items: [
         {text: '心理学', link: '/psychology/index', activeMatch: '/psychology/' },
         {text: '三观论', link: '/three-views/index', activeMatch: '/three-views' },
+        {text: '名人录', link: '/who-who/index', activeMatch: '/who-who' },
       ]
      },
     { text: '网站收藏', link: '/website/official-website', activeMatch: '/website/' },
