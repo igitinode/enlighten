@@ -1,4 +1,4 @@
-# 心理学{#psychology-index}
+# 心理学 {#psychology-index}
 
 ## 个体心理学
 

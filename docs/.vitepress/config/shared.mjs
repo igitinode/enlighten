@@ -139,7 +139,12 @@ function nav() {
     },
     { text: '后端', link: '/back-end/index', activeMatch: '/back-end/' },
     { text: '工具库', link: '/tools/index', activeMatch: '/tools/' },
-    { text: '心理学', link: '/psychology/index', activeMatch: '/psychology/' },
+    { text: '人文主义',
+      items: [
+        {text: '心理学', link: '/psychology/index', activeMatch: '/psychology/' },
+        {text: '三观论', link: '/three-views/index', activeMatch: '/three-views' },
+      ]
+     },
     { text: '网站收藏', link: '/website/official-website', activeMatch: '/website/' },
     { text: '指南', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
     { text: '参考', link: '/reference/site-config', activeMatch: '/reference/' },
