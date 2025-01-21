@@ -5,6 +5,7 @@
 ## 人生观 {#life-view}
 
 - [对于“失去”的个人看法](./life/worldly-lost-opinion.md)
+- [快乐的么秘诀是装傻](./life/secrte-hapy.md)
 
 ## 价值观 {#value-view}
 
