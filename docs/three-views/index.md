@@ -6,6 +6,7 @@
 
 - [对于“失去”的个人看法](./life/worldly-lost-opinion.md)
 - [快乐的么秘诀是装傻](./life/secrte-hapy.md)
+- [一切形式的知识，最终都是为了自我了解](./life/worldly-read-book.md)
 
 ## 价值观 {#value-view}
 
