@@ -16,3 +16,7 @@
 - [处世智慧 - 劝不动、拦不住，那就是命](./value/value-weirenchushi.md)
 
 ## 人情世故
+
+## 信仰
+
+- [佛在心中, 拜佛拜的是什么？](./faith/faith-baifo.md)
