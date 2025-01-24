@@ -7,6 +7,7 @@
 - [对于“失去”的个人看法](./life/worldly-lost-opinion.md)
 - [快乐的么秘诀是装傻](./life/secrte-hapy.md)
 - [一切形式的知识，最终都是为了自我了解](./life/worldly-read-book.md)
+- [醒来 - 人活着最大的意义](./life/worldly-wakeup.md)
 
 ## 价值观 {#value-view}
 
@@ -20,3 +21,4 @@
 ## 信仰
 
 - [佛在心中, 拜佛拜的是什么？](./faith/faith-baifo.md)
+
