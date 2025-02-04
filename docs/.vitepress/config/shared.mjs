@@ -147,6 +147,12 @@ function nav() {
       ]
      },
     { text: '网站收藏', link: '/website/official-website', activeMatch: '/website/' },
+    { text: '个人', 
+      items: [
+        {text: '2025', link: '/improveme/index', activeMatch: '/improveme/' },
+        {text: '点滴瞬间', link: '/dripping/index', activeMatch: '/dripping/' },
+      ]
+    },
     { text: '指南', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
     { text: '参考', link: '/reference/site-config', activeMatch: '/reference/' },
     // {
