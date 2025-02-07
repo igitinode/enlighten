@@ -16,9 +16,12 @@
 - [读书是性价比最高的置换关系](./value/value-read-chang.md)
 - [处世智慧 - 劝不动、拦不住，那就是命](./value/value-weirenchushi.md)
 
+## 教育 {#educate}
+
+- [五乱毁一生](./educate/edu-5luan.md)
+
 ## 人情世故
 
 ## 信仰
 
 - [佛在心中, 拜佛拜的是什么？](./faith/faith-baifo.md)
-
