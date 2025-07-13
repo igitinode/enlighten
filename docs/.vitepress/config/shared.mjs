@@ -130,31 +130,67 @@ export const sharedConfig = defineConfig({
 function nav() {
   /* prettier-ignore */
   return [
-    { text: '前端',
+    {
+      text: '前端',
       items: [
-        { text: '前端目录', link: '/front-end/index', activeMatch: '/front-end/'},
-        { text: 'Vue', link: '/front-end/vue/index', activeMatch: '/front-end/vue/'},
-        { text: 'Pinia', link: '/front-end/pinia/index', activeMatch: '/front-end/pinia/'},
-      ]
+        {
+          text: '前端目录',
+          link: '/front-end/index',
+          activeMatch: '/front-end/',
+        },
+        {
+          text: 'Vue',
+          link: '/front-end/vue/index',
+          activeMatch: '/front-end/vue/',
+        },
+        {
+          text: 'Pinia',
+          link: '/front-end/pinia/index',
+          activeMatch: '/front-end/pinia/',
+        },
+      ],
     },
     { text: '后端', link: '/back-end/index', activeMatch: '/back-end/' },
     { text: '工具库', link: '/tools/index', activeMatch: '/tools/' },
-    { text: '人文主义',
+    {
+      text: '人文主义',
       items: [
-        {text: '心理学', link: '/psychology/index', activeMatch: '/psychology/' },
-        {text: '三观论', link: '/three-views/index', activeMatch: '/three-views' },
-        {text: '名人录', link: '/who-who/index', activeMatch: '/who-who' },
-      ]
-     },
-    { text: '网站收藏', link: '/website/official-website', activeMatch: '/website/' },
-    { text: '个人', 
+        {
+          text: '心理学',
+          link: '/psychology/index',
+          activeMatch: '/psychology/',
+        },
+        {
+          text: '三观论',
+          link: '/three-views/index',
+          activeMatch: '/three-views',
+        },
+        { text: '名人录', link: '/who-who/index', activeMatch: '/who-who' },
+      ],
+    },
+    {
+      text: '网站收藏',
+      link: '/website/official-website',
+      activeMatch: '/website/',
+    },
+    {
+      text: '个人',
       items: [
-        {text: '2025', link: '/improveme/index', activeMatch: '/improveme/' },
-        {text: '点滴瞬间', link: '/dripping/index', activeMatch: '/dripping/' },
-      ]
+        { text: '2025', link: '/improveme/index', activeMatch: '/improveme/' },
+        { text: '教员', link: '/mao/index', activeMatch: '/mao/' },
+        {
+          text: '点滴瞬间',
+          link: '/dripping/index',
+          activeMatch: '/dripping/',
+        },
+      ],
     },
     { text: '指南', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
-    { text: '参考', link: '/reference/site-config', activeMatch: '/reference/' },
+    {
+      text: '参考',
+      link: '/reference/site-config',
+      activeMatch: '/reference/',
+    },
     // {
     //   text: pkg.version, // 首页导航有下拉菜单
     //   items: [
