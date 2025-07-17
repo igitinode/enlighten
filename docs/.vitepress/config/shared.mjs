@@ -183,6 +183,11 @@ function nav() {
           link: '/dripping/index',
           activeMatch: '/dripping/',
         },
+        {
+          text: '读书心得',
+          link: '/readbook/index',
+          activeMatch: '/readbook/',
+        },
       ],
     },
     { text: '指南', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
